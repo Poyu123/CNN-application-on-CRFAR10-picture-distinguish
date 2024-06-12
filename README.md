@@ -12,19 +12,17 @@ how to creat model::
 
        if you want to train auto.ly, use code auto_main.py , but pleased to set the initial possible values which are explained in details at the beginning of that code 
 
-
- how to test model::(two ways)
+how to test model::(two ways)
  
        1.download any picture from internet to the address test/image(before 2009 ). run code in the test file(make sure there's .h5 in /test/model)
          and you are seeing the result in /test/res
          
        2.run /code/distinguishing
 
-
-
-more::   this project is designed for our team's linear algedre project.
-         feel free to contact me
-
+more::
+              this project is designed for our team's linear algedre project.
+              feel free to contact me
+       
 copyrights::
-       belongs to this account !!
-       Don't plagiarize
+              belongs to this account !!
+              Don't plagiarize
