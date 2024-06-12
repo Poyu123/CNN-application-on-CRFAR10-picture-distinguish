@@ -10,7 +10,7 @@ how to creat model::
        creat model please run main.py in the code of distinguishing_10
        in advance, you should run the code preprocessing_10 to ensure you have the source data
 
-       if you want to train auto.ly, use code auto_main.py , but pleased to set the initial possible values which are explained in details at the          beginning of that code 
+       if you want to train auto.ly, use code auto_main.py , but pleased to set the initial possible values which are explained in details at the beginning of that code 
 
 
  how to test model::(two ways)
