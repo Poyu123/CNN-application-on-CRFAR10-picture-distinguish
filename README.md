@@ -20,9 +20,13 @@ how to test model::(two ways)
        2.run /code/distinguishing
 
 more::
+              
               this project is designed for our team's linear algedre project.
+              
               feel free to contact me
+              
        
 copyrights::
               belongs to this account !!
+              
               Don't plagiarize
