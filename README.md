@@ -1,5 +1,53 @@
 # CNN-application-on-CRFAR10-picture-distinguish
 
+## Project Introduction
+[cite_start]This project is an image classification system based on a Convolutional Neural Network (CNN), designed to effectively identify and distinguish 10 categories of objects in the CIFAR-10 dataset (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck) [cite: 180, 224][cite_start]. This project was originally designed and developed for the team's linear algebra course project[cite: 4].
+
+## Dependencies
+Before running this project, please ensure the following Python libraries are installed in your environment:
+* Python 3.x
+* [cite_start]TensorFlow / Keras [cite: 180]
+* [cite_start]NumPy [cite: 223]
+* [cite_start]Matplotlib [cite: 180]
+* [cite_start]Pillow (PIL) [cite: 223]
+* [cite_start]imageio [cite: 238]
+
+## Quick Start
+
+### 1. Data Preparation
+Since the original CIFAR-10 dataset is in binary format, it needs to be converted into image files before training.
+1. [cite_start]Go to the University of Toronto website (https://www.cs.toronto.edu/~kriz/cifar.html) to download and unzip the Python version of CIFAR-10[cite: 2].
+2. [cite_start]Open the `code/preprocessing_10.py` file and modify the path (e.g., `E:/cifar-10-batches-py/`) to your actual unzipped path[cite: 238].
+3. [cite_start]Run `preprocessing_10.py`, and the code will automatically convert the binary files into `.jpg` format and save them in the `train` and `test` folders by category[cite: 238, 239].
+
+### 2. Modify Base Directory (Core Requirement)
+[cite_start]**Important**: Before running any training or testing scripts, you must open the corresponding Python file (e.g., `main.py`, `auto_main.py`, `distinguish.py`, `test_distinguish.py`) and change the global variable `base_dir` to the actual absolute path of your local project[cite: 3].
+
+### 3. Model Training
+This project provides two training modes:
+* [cite_start]**Regular Training**: Run `code/main.py` [cite: 3][cite_start]. This script contains a standard CNN architecture. After training, it will automatically generate a folder with a timestamp and accuracy under the `mode` directory, saving the `.h5` model file and the Loss/Accuracy curve graphs of the training process[cite: 236].
+* [cite_start]**Automated Hyperparameter Tuning (Advanced)**: If you want to automatically find the best network parameters, please run `code/auto_main.py` [cite: 3][cite_start]. Before running, be sure to read the beginning of the code and set the relevant initial parameters (such as `batch_size_num`, `epochs`, `dense_num_max`, etc.)[cite: 3, 180].
+
+### 4. Model Testing and Prediction
+You can verify the accuracy of the model in two ways:
+
+**Method 1: Test any image from the internet**
+1. Download the image to be tested from the internet (images before 2009 or common object images are recommended).
+2. [cite_start]Place the image into the project's `test/image` directory[cite: 3].
+3. [cite_start]Ensure that the `test/model` directory contains your trained `.h5` model file[cite: 4].
+4. [cite_start]Run `test/test_distinguish.py`. The test results (including the image and its predicted probability distribution bar chart) will be output to the `test/res` directory[cite: 4, 241].
+
+**Method 2: Verify using the internal test set**
+1. [cite_start]Run `code/distinguish.py` directly[cite: 4].
+2. [cite_start]The script will randomly select 10 images from the test set for prediction, and generate a comprehensive accuracy pie chart and detailed probability distribution charts for each image in the `test_data/res` directory[cite: 224, 228].
+
+## Copyright Statement
+[cite_start]The copyright of the code in this project belongs to the authors (Poter & Yang / account owner) [cite: 5, 245][cite_start]. Please do not plagiarize or use it for commercial purposes [cite: 6][cite_start]. If you have any questions, feel free to contact us for discussion[cite: 5].
+
+---
+
+# CNN-application-on-CRFAR10-picture-distinguish
+
 ## 项目简介
 [cite_start]本项目是一个基于卷积神经网络 (CNN) 的图像分类系统，旨在对 CIFAR-10 数据集中的 10 类目标（飞机、汽车、鸟、猫、鹿、狗、青蛙、马、船、卡车）进行有效识别与区分 [cite: 180, 224][cite_start]。本项目最初为团队的线性代数课程项目而设计开发 [cite: 4]。
 
