@@ -4,7 +4,7 @@
 This project is an image classification system based on a Convolutional Neural Network (CNN), designed to effectively identify and distinguish 10 categories of objects in the CIFAR-10 dataset (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck). This project was originally designed and developed for the team's linear algebra course project.
 
 ## Dependencies
-Before running this project, please ensure the following Python libraries are installed in your environment:
+Before running this project, please ensure the following Python lid:braries are installed in your environment:
 * Python 3.x
 * TensorFlow / Keras
 * NumPy
@@ -83,11 +83,11 @@ The copyright of the code in this project belongs to the authors (Poter & Yang /
 1. 从互联网上下载待测试的图片（建议为 2009 年之前的图片，或常见的物体图片）。
 2. 将图片放入项目的 `test/image` 目录中
 3. 确保 `test/model` 目录下包含您训练好的 `.h5` 模型文件
-4. 运行 `test/test_distinguish.py`。测试结果（包含图片及其预测的概率分布柱状图）将输出到 `test/res` 目录中
+4. 运行 `test/test_distinguish.py`。测试结果（包含图片及其预测的概率分布柱状图）将输出到 `test/res` 目录中。
 
 **方式二：使用内部测试集验证**
 1. 直接运行 `code/distinguish.py`
-2. 脚本会在测试集中随机抽取 10 张图片进行预测，并在 `test_data/res` 目录下生成综合的准确率饼图和每张图片的详细概率分布图
+2. 脚本会在测试集中随机抽取 10 张图片进行预测，并在 `test_data/res` 目录下生成综合的准确率饼图和每张图片的详细概率分布图。
 
 ## 版权声明
 本项目的代码版权归作者 (Poter & Yang / 账号所有者) 所有。请勿随意抄袭或用于商业用途。如有任何问题，欢迎随时联系探讨。
